@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+      body {
+        background-color: white;
+      }
+    </style>
+</head>
+  <body>
+          <div>ООО КОМПАНИЯ</div>
+          <div>Добро пожаловать</div>
+          <div>ККМ 00075164 #3969</div>
+          <div>ИНН 1087746942040</div>
+          <div>ЭКЛЗ 3851495566</div>
+          <div>{{ date }} СИС.</div>
+          <div>AДМИ</div>
+          {% for item in items %}
+          <p>{{ item.get('title').upper() }}</p>
+          <p>{{ item.get('qty') }} = {{ item.get('price') * item.get('qty') }}</p>
+          {% if loop.index != loop.length %}
+          <br/>
+          {% endif %}
+          {% endfor %}
+          <div>ИТОГ {{ total_price }}</div>
+          <div>НАЛИЧНЫМИ = {{ total_price }}</div>
+          <div>***********************</div>
+          <div> 00003751# 05970</div>
+  </body>
+</html>
