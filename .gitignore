@@ -3,8 +3,10 @@ __pycache__/
 cash_register/cash_register/__pycache__/
 cash_register/cash_machine/__pycache__/
 cash_register/cash_machine/migrations/
+cash_register/cash_machine/test/__pycache__/
 cash_register/setenv.env
 **/__pycache__/
+**__pycache__/
 *.py[cod]
 *.log
 *.pot
