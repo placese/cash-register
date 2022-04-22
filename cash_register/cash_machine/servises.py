@@ -53,7 +53,7 @@ def _generate_html_receipt(items: list) -> str:
             date=generated_datetime
     )
 
-def _generate_pdf_receipt(html_receipt: str) -> None:
+def _generate_pdf_receipt(html_receipt: str):
     """Generates pdf receipt, saves it and returns it's filename"""
     options = {
         'encoding': 'UTF-8'
